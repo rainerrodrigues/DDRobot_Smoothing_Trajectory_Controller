@@ -61,4 +61,7 @@ ros2 param set /controller_node slowdown_gain 0.5
 To deploy on a real TurtleBot3: we can replace gazebo with the relevant hardware drivers, subscribe to real /odom and /scan topics and tune parameters with consideration for friction and commmunication latency and include watchdog in the system.
 
 AI Tools Used for assisting in the design of ROS2 package architecture design, debug topic mismatches and refine pure pursuit tuning strategies.
+## How to extend this code with obstacle avoidance
+Obstacle avoidance can be added as a local reactive layer on top of the trajectory-tracking controller. The robot uses LiDAR (LaserScan) data to detect nearby obstacles while following the global trajectory. When an obstacle is detected within a safety distance, the controller temporarily modifies the velocity commands—slowing down, stopping, or steering away—without changing the global path. Once the obstacle is cleared, the robot resumes trajectory tracking.
 
+This layered approach keeps the system modular, stable, and real-robot ready, and can be further extended with smoother methods like potential fields or local re-planning for more complex environments.
