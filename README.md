@@ -15,7 +15,9 @@ The solution is modular, tunable at runtime, and designed to be easily deployabl
 - Runtime tuning via ROS 2 parameters
 - Tracking error logging and plotting
 - Obstacle avoidance using LaserScan
-
+  
+![RViz](https://github.com/rainerrodrigues/DDRobot_Smoothing_Trajectory_Controller/blob/main/Rviz.png)
+![Gazebo](https://github.com/rainerrodrigues/DDRobot_Smoothing_Trajectory_Controller/blob/main/Gazebo.png)
 ## Setup Instructions
 ### System Requirements
 - Ubuntu 24.04
