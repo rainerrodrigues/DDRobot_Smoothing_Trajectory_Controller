@@ -15,7 +15,8 @@ The solution is modular, tunable at runtime, and designed to be easily deployabl
 - Runtime tuning via ROS 2 parameters
 - Tracking error logging and plotting
 - Obstacle avoidance using LaserScan
-  
+![PathTrackingDemo](https://github.com/rainerrodrigues/DDRobot_Smoothing_Trajectory_Controller/blob/main/PathTrackingDemo.png)
+![Error](https://github.com/rainerrodrigues/DDRobot_Smoothing_Trajectory_Controller/blob/main/Error%20vs%20Time%20Fig.png) 
 ![RViz](https://github.com/rainerrodrigues/DDRobot_Smoothing_Trajectory_Controller/blob/main/Rviz.png)
 ![Gazebo](https://github.com/rainerrodrigues/DDRobot_Smoothing_Trajectory_Controller/blob/main/Gazebo.png)
 ## Setup Instructions
@@ -57,7 +58,7 @@ RViz displays:
 ros2 param set /controller_node v_cmd 0.7
 ros2 param set /controller_node slowdown_gain 0.5
 ```
-
+[[Video Submission](https://github.com/rainerrodrigues/DDRobot_Smoothing_Trajectory_Controller/blob/main/VideoRecordingDDR.mp4)]
 # Other Qs
 ## Extending to a Real Robot
 To deploy on a real TurtleBot3: we can replace gazebo with the relevant hardware drivers, subscribe to real /odom and /scan topics and tune parameters with consideration for friction and commmunication latency and include watchdog in the system.
