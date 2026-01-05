@@ -46,7 +46,7 @@ source install/setup.bash
 ```
 ### Run Simulation
 ```
-ros2 launch ddrobot_nav tb3_navigation.launch.py
+ros2 launch tb3_trajectory_following full_demo.launch.py
 ```
 ### Visualization
 RViz displays:
